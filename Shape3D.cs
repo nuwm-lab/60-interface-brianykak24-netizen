@@ -2,7 +2,7 @@
 
 namespace LabWork
 {
-    public abstract class Shape3D
+    public abstract class Shape3D : IShape
     {
         private double _x1, _x2, _x3, _b1, _b2, _b3;
 
@@ -22,9 +22,7 @@ namespace LabWork
             this._b2 = b2;
             this._b3 = b3;
         }
-
         public abstract double GetVolume();
-        public abstract override string ToString();
 
         public virtual void FillData()
         {
@@ -46,7 +44,6 @@ namespace LabWork
             while (!double.TryParse(Console.ReadLine(), out value))
             {
                 Console.WriteLine($"Invalid input. Please enter a valid number. ({prompt})");
-
             }
             return value;
         }
