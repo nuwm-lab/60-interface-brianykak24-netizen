@@ -27,13 +27,13 @@ namespace LabWork
                 switch (choice)
                 {
                     case 1:
-                        Ellipsoid ellipsoid = new Ellipsoid(); 
+                        IShape ellipsoid = new Ellipsoid();
                         ellipsoid.FillData();
                         Console.WriteLine(ellipsoid.ToString());
                         Console.WriteLine($"Volume of Ellipsoid: {ellipsoid.GetVolume()}");
                         break;
                     case 2:
-                        Sphere sphere = new Sphere(); 
+                        IShape sphere = new Sphere();
                         sphere.FillData();
                         Console.WriteLine(sphere.ToString());
                         Console.WriteLine($"Volume of Sphere: {sphere.GetVolume()}");

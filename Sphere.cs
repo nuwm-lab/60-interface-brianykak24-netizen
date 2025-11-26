@@ -2,7 +2,7 @@
 
 namespace LabWork
 {
-    public class Sphere : Shape3D, IShape
+    public class Sphere : Shape3D
     {
         private double _r;
         public double R => _r;
